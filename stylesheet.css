@@ -274,11 +274,19 @@ header {
         display: none;
     }
     
+<<<<<<< HEAD
      @media screen and (max-width: 700px) {
        .topnav {
            display: none;
        }
    }
+=======
+    @media screen and (max-width: 600px) {
+        .tray-mobile-only {
+            display: block;
+        }
+    }
+>>>>>>> 234b05beb2aaab4379c57ef973271841396e41a6
 }
 
 /* Second breakpoint */

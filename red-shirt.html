@@ -55,15 +55,22 @@
             <h1>Online Shop</h1>
             <nav class="topnav" id="myTopnav">
                 <a href="index.html">Home</a>
+<<<<<<< HEAD
                 <a href="mens.html">Mens</a>
                 <a href="womens.html">Womens</a>
                  <a href="all-products.html">All</a>
+=======
+                <a href="grid-template.html">Mens</a>
+                <a href="grid-template copy.html">Womens</a>
+                 <a href="grid-template copy 2.html">All</a>
+>>>>>>> 234b05beb2aaab4379c57ef973271841396e41a6
                
             </nav>
             <button type="button" class="icon" id="menuToggle" onclick="toggleMenu()" aria-label="Toggle menu" aria-expanded="false" aria-controls="myTopnav">
                 <span class="material-symbols-outlined" id="menuIcon">menu</span>
             </button>
         </header>
+<<<<<<< HEAD
             
             <div class="tray-overlay" id="trayOverlay" onclick="toggleMenu()"></div>
 <aside class="side-tray" id="sideTray" aria-label="Site menu">
@@ -79,6 +86,8 @@
         <a href="all.html" class="tray-mobile-only">All</a>
     </nav>
 </aside>
+=======
+>>>>>>> 234b05beb2aaab4379c57ef973271841396e41a6
 
         <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
@@ -99,7 +108,11 @@
         = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = -->
 
         <article class="single-item">
+<<<<<<< HEAD
             <img src="images/red-shirt-1200-600.png" alt="Red Shirt" class="product-image">
+=======
+            <img src="images/shirt-2-front-final.png" alt="White Shirt" class="product-image">
+>>>>>>> 234b05beb2aaab4379c57ef973271841396e41a6
             <h2 class="single-item__h2">White Shirt</h2>
             <h3>Product Description</h3>
 
@@ -220,6 +233,7 @@
 
     <!-- JavaScript for the MOBILE NAV MENU -->
     <script>
+<<<<<<< HEAD
     function toggleMenu() {
         const tray = document.getElementById("sideTray");
         const overlay = document.getElementById("trayOverlay");
@@ -236,6 +250,18 @@
         }
     });
 </script>
+=======
+        function toggleMenu() {
+            const nav = document.getElementById("myTopnav");
+            const icon = document.getElementById("menuIcon");
+            const btn = document.getElementById("menuToggle");
+
+            const isOpen = nav.classList.toggle("responsive");
+            icon.textContent = isOpen ? "close" : "menu";
+            btn.setAttribute("aria-expanded", isOpen);
+        }
+    </script>
+>>>>>>> 234b05beb2aaab4379c57ef973271841396e41a6
 </body>
 
 </html>
