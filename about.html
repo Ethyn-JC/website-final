@@ -54,18 +54,17 @@
         <header>
             <h1>Website Template</h1>
             <nav class="topnav" id="myTopnav">
-                <a href="index.html">Home</a>
-<<<<<<< HEAD
+                <a href="index.html">Back Home</a>
             </nav>
             <button type="button" class="icon" id="menuToggle" onclick="toggleMenu()" aria-label="Toggle menu" aria-expanded="false" aria-controls="sideTray">
                 <span class="material-symbols-outlined" id="menuIcon">menu</span>
             </button>
         </header>
-        <div class="tray-overlay" id="trayOverlay" onclick="toggleMenu()"></div>
-        <aside class="side-tray" id="sideTray" aria-label="Site menu">
-        <button type="button" class="tray-close" onclick="toggleMenu()" aria-label="Close menu">
-        <span class="material-symbols-outlined">close</span>
-        </button>
+            <div class="tray-overlay" id="trayOverlay" onclick="toggleMenu()"></div>
+            <aside class="side-tray" id="sideTray" aria-label="Site menu">
+            <button type="button" class="tray-close" onclick="toggleMenu()" aria-label="Close menu">
+             <span class="material-symbols-outlined">close</span>
+            </button>
         <nav class="tray-links">
         <a href="contact.html">Contact</a>
         <a href="about.html">About</a>
@@ -75,17 +74,6 @@
         <a href="all.html" class="tray-mobile-only">All</a>
         </nav>
         </aside>
-=======
-                <a href="grid-template.html">Grid templates</a>
-                <a href="single-item.html">Single item</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-            <button type="button" class="icon" id="menuToggle" onclick="toggleMenu()" aria-label="Toggle menu" aria-expanded="false" aria-controls="myTopnav">
-                <span class="material-symbols-outlined" id="menuIcon">menu</span>
-            </button>
-        </header>
->>>>>>> 234b05beb2aaab4379c57ef973271841396e41a6
 
         <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
@@ -98,11 +86,7 @@
                 About this Website
             </h2>
             <p>
-<<<<<<< HEAD
                 The website I intend to create will be an online store. I have somewhat of a beginner's idea of how to make one through the lessons prior to this final project, and I took the Shopify online store course earlier in the year. Since I took the Shopify course before this one, I have assets at my disposal that I could use for products, and since completing that course, I would like to know what it would be like to build a website from scratch instead of using a template like what I did for Shopify..
-=======
-                This is your About page.
->>>>>>> 234b05beb2aaab4379c57ef973271841396e41a6
             </p>
             <a href="#" class="readmore-button">
                 Continue reading &hellip;
@@ -196,7 +180,6 @@
 
    <!-- JavaScript for the MOBILE NAV MENU -->
     <script>
-<<<<<<< HEAD
     function toggleMenu() {
         const tray = document.getElementById("sideTray");
         const overlay = document.getElementById("trayOverlay");
@@ -213,18 +196,6 @@
         }
     });
 </script>
-=======
-        function toggleMenu() {
-            const nav = document.getElementById("myTopnav");
-            const icon = document.getElementById("menuIcon");
-            const btn = document.getElementById("menuToggle");
-
-            const isOpen = nav.classList.toggle("responsive");
-            icon.textContent = isOpen ? "close" : "menu";
-            btn.setAttribute("aria-expanded", isOpen);
-        }
-    </script>
->>>>>>> 234b05beb2aaab4379c57ef973271841396e41a6
 
 </body>
 
