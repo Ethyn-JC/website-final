@@ -55,11 +55,26 @@
             <h1>Website Template</h1>
             <nav class="topnav" id="myTopnav">
                 <a href="index.html">Back Home</a>
+                
             </nav>
             <button type="button" class="icon" id="menuToggle" onclick="toggleMenu()" aria-label="Toggle menu" aria-expanded="false" aria-controls="myTopnav">
                 <span class="material-symbols-outlined" id="menuIcon">menu</span>
             </button>
-        </header>
+                </header>
+                <div class="tray-overlay" id="trayOverlay" onclick="toggleMenu()"></div>
+        <aside class="side-tray" id="sideTray" aria-label="Site menu">
+            <button type="button" class="tray-close" onclick="toggleMenu()" aria-label="Close menu">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+            <nav class="tray-links">
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+                <a href="index.html" class="tray-mobile-only">Home</a>
+                <a href="mens.html" class="tray-mobile-only">Mens</a>
+                <a href="womens.html" class="tray-mobile-only">Womens</a>
+                <a href="all-products.html" class="tray-mobile-only">All</a>
+            </nav>
+        </aside>
 
     <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 
@@ -160,18 +175,24 @@
        *************************************** -->
 
    <!-- JavaScript for the MOBILE NAV MENU -->
-    <script>
-        function toggleMenu() {
-            const nav = document.getElementById("myTopnav");
-            const icon = document.getElementById("menuIcon");
-            const btn = document.getElementById("menuToggle");
+   <script>
+    function toggleMenu() {
+        const tray = document.getElementById("sideTray");
+        const overlay = document.getElementById("trayOverlay");
+        const btn = document.getElementById("menuToggle");
 
-            const isOpen = nav.classList.toggle("responsive");
-            icon.textContent = isOpen ? "close" : "menu";
-            btn.setAttribute("aria-expanded", isOpen);
+        const isOpen = tray.classList.toggle("open");
+        overlay.classList.toggle("open", isOpen);
+        btn.setAttribute("aria-expanded", isOpen);
+    }
+
+    // Close with the Escape key
+    document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && document.getElementById("sideTray").classList.contains("open")) {
+            toggleMenu();
         }
-    </script>
-
+    });
+</script>
 </body>
 
 </html>

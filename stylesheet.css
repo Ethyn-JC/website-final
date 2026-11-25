@@ -635,8 +635,8 @@ header {
     text-decoration: none;
     font-size: 1.4rem;
     padding: 1rem;
-    width: 140px;
-    display:block ;
+    width: 140px;z
+    display: block ;
     border-radius: 10px;
 }
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -884,6 +884,26 @@ ul.footer__menu__list li a:hover {
     }
 }
 
+/* mobile menu tray that shows all pages */
+.side-tray .tray-links a.tray-mobile-only {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+   
+    header .topnav {
+        display: none;
+    }
+
+    header button.icon {
+        display: block;
+    }
+
+    .side-tray .tray-links a,
+    .side-tray .tray-links a.tray-mobile-only {
+        display: block;
+    }
+}
+
 /* = = =   E N D   O F   T H E   C S S  = = = */
 
 /* *********************
@@ -904,3 +924,4 @@ ul.footer__menu__list li a:hover {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
+
